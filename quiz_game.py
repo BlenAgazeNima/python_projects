@@ -1,8 +1,10 @@
 import time
+
+
 def quiz():
     print("𝓦𝓮𝓵𝓬𝓸𝓶𝓮 𝓽𝓸 𝓽𝓱𝓮 𝓺𝓾𝓲𝔃👋")
-    print(" ")
-    time.sleep(1)
+    print(" ")#To add extra line
+    time.sleep(1)#To give the user some time before reading to read the line above
 
     print("In this game you are going to play general questions about Ethiopia.")
     print(" ")
@@ -15,12 +17,12 @@ def quiz():
     print("𝓖𝓸𝓸𝓭 𝓛𝓾𝓬𝓴✨")
     print(" ")
 
-    points=0
+    points=0#A variable that is used to count the number of points the user got by answering the quiz questions
     actual_answer1="africa"
     user_answer1=input("Where is Ethiopia located?")
 
-    if user_answer1.lower()==actual_answer1:
-        points=points+1
+    if user_answer1.lower()==actual_answer1:#used to check  if the answer the user entered is the same as the actual answer
+        points=points+1#adds ppoint if the answer is correct
         print("Correct")
     else:
         print("Incorrect you lose 1 pt for this question")
@@ -44,6 +46,8 @@ def quiz():
     else:
         print("Incorrect you lose 1 pt for this question")
 
+
+
     print(" ")
     actual_answer4="au"
     user_answer4=input("Which continental organization is located in Ethiopias capital city?")
@@ -54,7 +58,7 @@ def quiz():
         print("Incorrect you lose 1 pt for this question")
     
     print(" ")
-    if points>=2:
+    if points>=2:#Checks if the user has at least answered two questions correctly and if so it will declare the user as winner else as loser.
         print(f"You won!You have scored {points} out of 4.")
     else:
         print(f"You lost!You have scored {points} out of 4.")
@@ -62,5 +66,9 @@ def quiz():
 
 
 def main():
+
+
     quiz()
+
+
 main()
